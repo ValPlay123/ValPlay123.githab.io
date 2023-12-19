@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.4rem;
+	background: whitesmoke;
+	margin: 0;
+	padding: 1rem;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+ol {
+	list-style-position: inside; float:left;
+	width: 200px;
+	max-width: 100%;
+	background: white;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+	padding: 0;
+	margin: 0;
+	border-radius: 0.1rem;
+}
+.math {
+	background-color: #5F9EA0;
+}
+.rus {
+	background-color: #fd54a3;
+}
+.eng {
+	background-color: #31149b;
+}
+.inf {
+	background-color: #2493dd;
+}
+.phtr {
+	background-color: #bac42e;
+}
+.lit{
+	background-color: #9400D3;
+}
+.chem {
+	background-color: #556B2F;
+}
+.bio {
+	background-color: #8B4513;
+}
+.wac {
+	background-color: #FF6347;
+}
+.tait {
+	background-color: #98FB98;
+}
+.ophist {
+	background-color: #FFD700;
+}
+.geo {
+	background-color: #6A5ACD;
+}
+.hist {
+	background-color: #DDA0DD;
+}
+.opinf {
+	background-color: #8FBC8F;
+}
+.phys {
+	background-color: #7B68EE;
+}
+.rusworld {
+	background-color: #808080;
+}
+
+}
+li {
+	padding: 0 0 0 1rem;
+	border-bottom: 1px solid lightblue;
+}
+
+
+
+
+/*________________________________________________________________________*/
+::marker {
+	--image: '📩 ';
+	content: counter(list-item) ' ' var(--image);
+}
+
+li:nth-child(2)::marker {
+	--image: '🐈 ';
+}
+
+li:nth-child(3)::marker {
+	--image: '🗑 ';
+}
+
+li:nth-child(4)::marker {
+	--image: '🪴 ';
+}
+
+li:nth-child(5)::marker {
+	--image: '🔑 ';
+}
